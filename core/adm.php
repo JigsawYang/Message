@@ -32,6 +32,7 @@ function add_text() {
  * @return multitype:
  */
 function get_all_title() {
+	
 	$sql = "select title from user_msg";
 	$rows = fetch_all($sql);
 	return $rows;
@@ -49,6 +50,7 @@ function get_user_text($title) {
 }
 
 
+
 //注销用户
 function logout() {
 	$_SESSION = array();
@@ -58,4 +60,6 @@ function logout() {
 	session_destroy();
 	header("location: login.php");
 }
+
+
 
