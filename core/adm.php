@@ -57,6 +57,12 @@ function logout() {
 	if(isset($_COOKIE[session_name()])) {
 		setcookie(session_name(), "", time()-100);
 	}
+	if(isset($_COOKIE['adname'])) {
+		setcookie("adname", "", time()-100);
+	}
+	if(isset($_COOKIE['adminid'])) {
+		setcookie("adminid", "", time()-100);
+	}
 	session_destroy();
 	header("location: login.php");
 }

@@ -58,13 +58,24 @@ function delete($table, $where = null) {
 	mysql_query($sql);
 	return mysql_affected_rows();
 }
-
+/**
+ * 取一条数据
+ * @param string $sql
+ * @param string $result_type
+ * @return multitype:
+ */
 function fetch_one($sql, $result_type = MYSQL_ASSOC) {
 	$result = mysql_query($sql);
 	$row = mysql_fetch_array($result, $result_type);
 	return $row;
 }
 
+/**
+ * 去多条数据
+ * @param string $sql
+ * @param string $result_type
+ * @return multitype:
+ */
 function fetch_all($sql, $result_type = MYSQL_ASSOC) {
 	$result = mysql_query($sql);
 	while (@$row = mysql_fetch_array($result, $result_type)) {
@@ -73,11 +84,15 @@ function fetch_all($sql, $result_type = MYSQL_ASSOC) {
 	return $rows;
 }
 
+/**
+ * 获得总行数
+ * @param string $sql
+ * @return number
+ */
 function get_result_num($sql) {
 	$result = mysql_query($sql);
 	return mysql_num_rows($result);
 }
-
 
 
 

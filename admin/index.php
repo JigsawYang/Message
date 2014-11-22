@@ -68,7 +68,9 @@ if(!$rows) {
 					<li>
                     <?php 
                     	if(isset($_SESSION['adname'])) {
-                    		echo "<a href='#'>".$_SESSION['adname']."</a>";
+                    		echo "<a href='#'>欢迎,".$_SESSION['adname']."</a>";
+                    	} elseif(isset($_COOKIE['adname'])) {
+                    		echo "<a href='#'>欢迎,".$_COOKIE['adname']."</a>";
                     	} else {
                     		echo "<a href='login.php'>登陆</a>";
                     	}

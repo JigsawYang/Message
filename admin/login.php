@@ -46,7 +46,7 @@
                 </div>
                 <div class="checkbox">
                     <label id="ckb">
-                        <input type="checkbox" name="auto_flag" value="1"> 自动登陆(一周内自动登陆)
+                        <input type="checkbox" name="auto_flag" value="1"> 自动登陆(三天内自动登陆)
                     </label>
                 </div>
                 <button type="submit" class="btn btn-primary btn-lg btn-block">登陆</button>
