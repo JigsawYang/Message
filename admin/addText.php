@@ -15,6 +15,9 @@ require_once '../include.php';
     <link href="styles/main.css" rel="stylesheet" media="screen">
     <script src="scripts/jquery-1.11.1.js"></script>
     <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/jquery.validate.min.js"></script>
+    <script src="scripts/validate.js"></script>
+    <script src="scripts/message.js"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -23,7 +26,7 @@ require_once '../include.php';
         <![endif]-->
 </head>
 
-<body>
+<body class="mytop">
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="navid">
         <div class="container">
             <div class="navbar-header">
@@ -71,7 +74,7 @@ require_once '../include.php';
     <div class="container">
         <div class="formarea">
             <h2>写文章</h2>
-            <form action="do_admin_act.php?act=addtext" method="post" role="form">
+            <form action="do_admin_act.php?act=addtext" method="post" role="form" id="addtextform">
                 <div class="form-group">
                     <label for="mytitle">文章标题</label>
                     <input type="text" class="form-control" name="title" placeholder="标题">

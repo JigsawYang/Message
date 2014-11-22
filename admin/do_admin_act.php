@@ -32,7 +32,7 @@ if($act == "logout") {
         <![endif]-->
 </head>
 
-<body>
+<body class="mytop">
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="navid">
         <div class="container">
             <div class="navbar-header">

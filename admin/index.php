@@ -45,7 +45,7 @@ if(!$rows) {
         <![endif]-->
 </head>
 
-<body>
+<body class="mytop">
 	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation"
 		id="navid">
 		<div class="container">
@@ -78,7 +78,7 @@ if(!$rows) {
                     	if(isset($_SESSION['adname'])) {
                     		echo "<a href='do_admin_act.php?act=logout'>退出</a>";
                     	} else {
-                    		echo "<a href='#'>注册</a>";
+                    		echo "<a href='reg.php'>注册</a>";
                     	}
                     	?>                  
                     </li>
@@ -102,7 +102,7 @@ if(!$rows) {
 			</p>
 		</div>
 		<!-- jumbotron over -->
-		<div class="row" id="pan">
+		<div class="row center" id="pan">
         <?php foreach($rows as $row):?>
             <div class="col-md-4">
 				<h2><?php echo $row['title'];?></h2>

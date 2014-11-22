@@ -1,5 +1,5 @@
 /*header*/
-body {
+.mytop {
     padding: 50px 0;
 }
 .header {
@@ -38,7 +38,10 @@ body {
 .main #ckb {
     font-size: 15px;
 }
-
+#bigfont {
+	font-family: "微软雅黑";
+	font-size: 30px;
+}
 .hr_25 {
     height: 25px;
 }
@@ -87,3 +90,32 @@ hr .divider {
 .center {
 	text-align: center;
 }
+
+/* form validata */
+#username-error, #password-error, #repassword-error, #adname-error, #psd-error {
+	color: #b20000;
+	font-size: 15px;
+}
+/* #password-error {
+	color: #b20000;
+	font-size: 15px;
+}
+#repassword-error {
+	color: #b20000;
+	font-size: 15px;
+}
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+

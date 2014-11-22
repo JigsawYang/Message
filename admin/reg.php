@@ -25,31 +25,30 @@
     <body>
         <div class="header">
             <div class="content">
-                <a href=""><img src="images/logo.png" alt="logo"></a>
+                <a href="index.php"><img src="images/logo.png" alt="logo"></a>
                 <h3>iMessage</h3>
             </div>
         </div>
         <div class="main">
-            <form action="do_login.php" role="form" method="post" id="loginform">
+            <form action="do_reg.php" role="form" method="post" id="regform">
                 <div class="form-group">
-                    <label for="adname">用户名</label>
-                    <input type="text" class="form-control" name="adname" placeholder="请输入用户名">
+                    <label for="username">用户名</label>
+                    <input type="text" class="form-control" name="username" placeholder="请输入用户名">
                 </div>
                 <div class="form-group">
-                    <label for="psd">密码</label>
-                    <input type="password" class="form-control" name="psd" placeholder="密码">
+                    <label for="password">密码</label>
+                    <input type="password" class="form-control" name="password" placeholder="密码" id="password">
+                </div>
+                <div class="form-group">
+                    <label for="repassword">再次输入密码</label>
+                    <input type="password" class="form-control" name="repassword" placeholder="密码">
                 </div>
                 <div class="form-group">
                     <label for="vcode">验证码</label>
                     <input type="text" class="form-control" name="vcode" placeholder="验证码">
                     <img src="get_verify.php" alt="vcode">
                 </div>
-                <div class="checkbox">
-                    <label id="ckb">
-                        <input type="checkbox" name="auto_flag" value="1"> 自动登陆(一周内自动登陆)
-                    </label>
-                </div>
-                <button type="submit" class="btn btn-primary btn-lg btn-block">登陆</button>
+                <button type="submit" class="btn btn-success btn-lg btn-block">登陆</button>
             </form>
         </div>
         <div class="hr_25"></div>

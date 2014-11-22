@@ -4,9 +4,10 @@ $adname = $_POST['adname'];
 $password = md5($_POST['psd']);
 $vcode = strtolower($_POST['vcode']);
 $verify1 = $_SESSION['verify'];
-$auto_flag = $_COOKIE['auto_flag'];
+@$auto_flag = $_COOKIE['auto_flag'];
 
 if($verify1 == $vcode) {
+	$adname = mysql_real_escape_string($adname);//防止SQL注入
 	$sql = "select * from msg_admin where username='{$adname}' and password='{$password}'";
 	$row = check_admin($sql);
 	if($row) {
