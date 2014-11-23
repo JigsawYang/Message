@@ -14,4 +14,3 @@ require_once 'common.php';
 connect();
 ?>
 
-
