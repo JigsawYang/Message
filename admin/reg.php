@@ -33,15 +33,15 @@
             <form action="do_reg.php" role="form" method="post" id="regform">
                 <div class="form-group">
                     <label for="username">用户名</label>
-                    <input type="text" class="form-control" name="username" placeholder="请输入用户名">
+                    <input type="text" class="form-control" name="username" placeholder="请输入用户名" autocomplete="off">
                 </div>
                 <div class="form-group">
                     <label for="password">密码</label>
-                    <input type="password" class="form-control" name="password" placeholder="密码" id="password">
+                    <input type="password" class="form-control" name="password" placeholder="密码" id="password" autocomplete="off">>
                 </div>
                 <div class="form-group">
                     <label for="repassword">再次输入密码</label>
-                    <input type="password" class="form-control" name="repassword" placeholder="密码">
+                    <input type="password" class="form-control" name="repassword" placeholder="密码" autocomplete="off">>
                 </div>
                 <div class="form-group">
                     <label for="vcode">验证码</label>

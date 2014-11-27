@@ -1,7 +1,7 @@
 <?php
 
 //获取用户名
-function check_admin($sql) {
+function check_dmin($sql) {
 	return fetch_one($sql);
 }
 
